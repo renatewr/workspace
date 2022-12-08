@@ -1,0 +1,27 @@
+{
+  "name": "express-example-starter",
+  "version": "1.0.0",
+  "description": "An Express-based application skeleton",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --experimental-network-imports --trace-warnings app.js localhost 8080",
+    "dev-start": "node --experimental-network-imports --trace-warnings src/server.js localhost 8080"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "compression": "1.7.4",
+    "dnscache": "1.0.2",
+    "debug": "~2.6.9",
+    "express": "4.18.2",
+    "morgan": "~1.9.1",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  },
+  "keywords": [
+    "expressjs",
+    "express"
+  ],
+  "type": "module"
+}
