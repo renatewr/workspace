@@ -1,7 +1,8 @@
 import { Router } from "express";
 import exampleView from "../src/views/example.view.js";
-import brickInput from "../src/views/brick-input.js";
 import brickHelloworld from "../src/views/brick-helloworld.js";
+import brickInput from "../src/views/brick-input.js";
+import brickToggle from '../src/views/brick-toggle.js';
 
 var router = Router();
 const catchExceptions = (handler) => async (req, res, next) => {
@@ -23,6 +24,12 @@ router.get("/example", (req, res) => {
 router.get("/brick-input", (req, res) => {
   res.type("text/html");
   const html = brickInput();
+  res.end(html);
+});
+
+router.get("/brick-toggle", (req, res) => {
+  res.type("text/html");
+  const html = brickToggle();
   res.end(html);
 });
 

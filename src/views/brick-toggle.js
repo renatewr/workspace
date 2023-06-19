@@ -5,14 +5,15 @@ import {
   getCssText,
 } from "https://assets.acdn.no/pkg/@amedia/brick-toggle/0.2.0/template.js";
 
-const tmp1 = renderBrickToggle({
-    ontext: "På",
-    offtext: "Av",
+export default function renderBrick() {
+  const tmp1 = renderBrickToggle({
     value: "Lysbryter",
-    checked: "true"
+    onText: "På",
+    offText: "Av",
+    checked: "false",
   });
 
-const render =`<div class="themeAlfa">
+  const markup = `<div class="themeAlfa">
   <h2>Alfa</h2>
   ${tmp1}
   
@@ -35,6 +36,5 @@ const render =`<div class="themeAlfa">
   <style>${getCssText()}</style>
   `;
 
-export default function renderBrick() {
-  return renderHTML(render);
+  return `${renderHTML(markup)}`;
 }

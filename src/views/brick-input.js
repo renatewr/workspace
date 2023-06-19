@@ -19,6 +19,9 @@ const renderBrickInputs = () => {
     type: "text",
     labelText: "Firstname",
     required: "true",
+    value: "",
+    placeholder: "Your firstname",
+    pattern: "[A-Za-z]{2,}",
   });
 
   return `<div class="themeAlfa">

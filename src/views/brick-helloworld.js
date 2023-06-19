@@ -2,7 +2,7 @@ import renderHTML from "./default.js";
 import {
   renderBrickHelloworld,
   getCssText,
-} from "https://assets.acdn.no/pkg/@amedia/brick-helloworld/0.0.0-vHELLOWORLD-20230612221018/template.js";
+} from "https://assets.acdn.no/pkg/@amedia/brick-helloworld/v1/template.js";
 
 export default function renderBrick() {
   const tmp1 = renderBrickHelloworld({
